@@ -18,7 +18,7 @@
   margin-right: 1rem;
 }
 
-.Contact .Navbar nav {
+.Contact .Navbar .Nav {
   display: flex;
   justify-content: center;
   align-items: center;

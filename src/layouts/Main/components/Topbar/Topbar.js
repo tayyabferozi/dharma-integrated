@@ -158,14 +158,16 @@ const Topbar = props => {
               }}>
               <Grid item md={2} sm={2} lg={2}>
                 <IconButton>
-                  <Typography
-                    className={classes.FAQs}
-                    onMouseEnter={mouse}
-                    onMouseLeave={mouseout}
-                    id="colorstext">
-                    {' '}
-                    FAQs
-                  </Typography>
+                  <Link to="/faq">
+                    <Typography
+                      className={classes.FAQs}
+                      onMouseEnter={mouse}
+                      onMouseLeave={mouseout}
+                      id="colorstext">
+                      {' '}
+                      FAQs
+                    </Typography>
+                  </Link>
                 </IconButton>
               </Grid>
               <Grid item md={4} sm={4} lg={4}>
@@ -235,15 +237,19 @@ const Topbar = props => {
             style={{ paddingTop: '4vh', paddingRight: '2vh' }}>
             <Grid item md={2} sm={2} lg={2} xs={5}>
               <IconButton>
-                <Typography className={classes.FAQs}> FAQs</Typography>
+                <Link to="/faq">
+                  <Typography className={classes.FAQs}> FAQs</Typography>
+                </Link>
               </IconButton>
             </Grid>
             <Grid item md={2} sm={2} lg={2} xs={7}>
-              <Button
-                variant="contained"
-                className={classes.GetStartedOnlineMobile}>
-                Log In
-              </Button>
+              <Link to="/login">
+                <Button
+                  variant="contained"
+                  className={classes.GetStartedOnlineMobile}>
+                  Log In
+                </Button>
+              </Link>
               <Typography>{'  '}</Typography>
             </Grid>
           </Grid>

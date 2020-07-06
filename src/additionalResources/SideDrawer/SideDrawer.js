@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 import './SideDrawer.css';
 
@@ -54,7 +55,9 @@ const SideDrawer = () => {
         <div className="NavItem">Customers</div>
         <div className="NavItem">Resources</div>
         <div className="NavItem">About Us</div>
-        <button className="ContactUs">Contact Us</button>
+        <Link to="/contact">
+          <button className="ContactUs">Contact Us</button>
+        </Link>
         <div className="SocialWrapper">
           {/* <img src={require("../../../media/instagram.jpeg")} alt="instagram" />
           <img src={require("../../../media/twitter.jpeg")} alt="twitter" /> */}
