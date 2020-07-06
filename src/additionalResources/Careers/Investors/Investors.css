@@ -1,0 +1,32 @@
+.Careers .Investors {
+  margin-bottom: 10rem;
+}
+
+.Careers .Investors h2 {
+  text-align: center;
+}
+
+.Careers .Investors p {
+  max-width: 31.25rem;
+  margin: auto;
+  text-align: center;
+}
+
+.Careers .Investors .Logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 45.125rem;
+  margin: 3.75rem auto;
+  padding: 0 1.875rem;
+}
+
+@media screen and (max-width: 900px) {
+  .Careers .Investors .Logos {
+    flex-direction: column;
+  }
+
+  .Careers .Investors .Logos > * {
+    margin: 1.125rem 0;
+  }
+}

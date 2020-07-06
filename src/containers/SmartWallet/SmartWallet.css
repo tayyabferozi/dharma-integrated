@@ -1,0 +1,87 @@
+* {
+  color: #fff;
+}
+
+.SmartWallet {
+  background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+<<<<<<< HEAD
+=======
+  font-family: "Graphik";
+>>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
+  font-weight: 600;
+}
+
+h2,
+h5 {
+<<<<<<< HEAD
+=======
+  font-family: "Graphik";
+>>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 4.125rem;
+  margin-bottom: 1.563rem;
+  line-height: 63px;
+  letter-spacing: -2px;
+  max-width: 63.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h3 {
+<<<<<<< HEAD
+=======
+  font-family: "Graphik";
+>>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.75rem;
+  margin-bottom: 1.563rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #cccccc;
+  text-align: center;
+}
+
+p.Mono {
+  font-family: "SFMono";
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+::selection {
+  background-color: #ff33d4;
+  color: #fff;
+}
+
+@media screen and (max-width: 639px) {
+  h2 {
+    font-size: 2.188rem;
+    line-height: 1.13;
+    letter-spacing: -0.85px;
+  }
+  p {
+    font-size: 15px;
+  }
+}

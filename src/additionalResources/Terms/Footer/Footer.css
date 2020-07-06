@@ -1,0 +1,25 @@
+.Terms .Footer {
+  padding-bottom: 20vh;
+  text-align: center;
+}
+
+.Terms .Footer .cta {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 400px;
+  flex-wrap: wrap;
+}
+
+.Terms .Footer p {
+  font-size: 0.85rem;
+  max-width: 700px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.Terms .hr {
+  border-top: 1px solid #dee2ef;
+  max-width: 70%;
+  margin: 3rem auto;
+}

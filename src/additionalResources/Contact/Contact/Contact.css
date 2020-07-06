@@ -1,0 +1,152 @@
+.Contact {
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .Contact {
+    padding: 0;
+  }
+}
+
+.Contact h1,
+.Contact p {
+  color: #253165;
+}
+
+.Contact h1 {
+  font-size: 7rem;
+}
+
+.Contact h1 .Red {
+  color: #e3312d;
+}
+
+.Contact h2 {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.Contact h3 {
+  margin-top: 3rem;
+}
+
+.Contact .CardContainer {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 5rem auto 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Contact a {
+  width: 21.25rem;
+  /* width: 100%; */
+  display: block;
+  margin: 0 0 3rem;
+}
+
+.Contact a .Card {
+  margin: 0;
+}
+
+.Contact .Card {
+  width: 21.25rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.Contact .Card:hover {
+  transform: scale(1.04);
+}
+
+.Contact .Card .CardBody {
+  padding: 20px 20px 30px;
+}
+
+.Contact .Card h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #171c21;
+  margin: 20px 0 10px;
+}
+
+.Contact .Card p {
+  color: #6b7075;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Contact .Card button {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0f72e5;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.Contact .Card button:hover {
+  background-color: #1266c8;
+}
+
+.Contact .Card .CardImg img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  .Contact .CardContainer {
+    justify-content: center;
+  }
+
+  .Contact .Card {
+    margin: 1rem;
+  }
+}
+
+.ContactForm .FormControl {
+  max-width: 30rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ContactForm .FormControl h6 {
+  font-size: 1rem;
+  width: 50%;
+  text-align: left;
+}
+
+.ContactForm .FormControl select,
+.ContactForm .FormControl input[type="email"] {
+  width: 50%;
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #4671a4;
+  color: #fff;
+  font-size: 0.875rem;
+  border: none;
+  outline: none;
+}
+
+.ContactForm .FormControl textarea {
+  width: 50%;
+  height: 7rem;
+  background-color: #4671a4;
+  display: block;
+}

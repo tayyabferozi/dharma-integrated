@@ -1,0 +1,48 @@
+.Features {
+  margin-top: 8rem;
+  margin-bottom: 12.5rem;
+}
+
+.FeaturesBoxContainer {
+  display: flex;
+  max-width: 60.625rem;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.FeaturesBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 33.33%;
+  margin: auto;
+}
+
+.FeaturesBox p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 639px) {
+  .FeaturesBoxContainer {
+    flex-direction: column;
+  }
+
+  .Features {
+    margin-top: 3.75rem;
+    margin-bottom: 6.25rem;
+  }
+
+  .FeaturesBox {
+    max-width: 100%;
+  }
+
+  .Features h2 {
+    letter-spacing: -0.85px;
+  }
+
+  .Features p {
+    font-size: 0.938rem;
+    max-width: 17.5rem;
+  }
+}

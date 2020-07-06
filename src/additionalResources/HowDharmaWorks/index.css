@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'SFMono';
+  src: local('SFMono'), url(../../fonts/SFMonoMedium.otf);
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: local('GraphikMedium'), url(../../fonts/GraphikMedium.otf);
+}
+
+.HowDharmaWorksContainer {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Graphik', sans-serif;
+}
+
+.TextCenter {
+  text-align: center !important;
+}
+
+.HowDharmaWorksContainer h1,
+.HowDharmaWorksContainer h2,
+.HowDharmaWorksContainer h3,
+.HowDharmaWorksContainer h4,
+.HowDharmaWorksContainer h5,
+.HowDharmaWorksContainer h6 {
+  color: #1f2a4b;
+  font-family: 'Graphik';
+  font-weight: 600;
+}
+
+.HowDharmaWorksContainer h2,
+.HowDharmaWorksContainer h5 {
+  font-family: 'Graphik';
+  font-weight: 600;
+}
+
+.HowDharmaWorksContainer h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.563rem;
+  line-height: 63px;
+  letter-spacing: -2px;
+}
+
+.HowDharmaWorksContainer h3 {
+  font-size: 2rem;
+  color: #1f2a4b;
+  font-family: 'Graphik';
+  font-weight: 600;
+}
+
+.HowDharmaWorksContainer h5 {
+  font-size: 1.75rem;
+  margin-bottom: 1.563rem;
+}
+
+.HowDharmaWorksContainer p {
+  color: #8b93ad;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.HowDharmaWorksContainer ::selection {
+  background-color: #ff33d4;
+  color: #fff;
+}
+
+@media screen and (max-width: 639px) {
+  .HowDharmaWorksContainer h2 {
+    font-size: 2.188rem;
+    line-height: 1.13;
+  }
+}

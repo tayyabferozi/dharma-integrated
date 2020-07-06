@@ -1,0 +1,84 @@
+.HowDharmaWorksContainer .Features {
+  margin-top: 12.5rem;
+  padding: 0 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .HowDharmaWorksContainer .Features {
+    padding: 0 50px;
+  }
+}
+
+.HowDharmaWorksContainer .Feature {
+  margin: 0.625rem 0;
+  box-sizing: initial;
+}
+
+.HowDharmaWorksContainer .Feature img {
+  display: none;
+  margin: 2rem 0;
+  max-width: 100%;
+}
+
+.HowDharmaWorksContainer .TechStack {
+  max-width: 510px;
+  width: 50%;
+}
+
+.HowDharmaWorksContainer .FeaturesText {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.HowDharmaWorksContainer .FeaturesText h3 {
+  margin-top: 1.875rem;
+  text-align: left;
+}
+
+.HowDharmaWorksContainer .FeaturesText ul {
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.HowDharmaWorksContainer .FeaturesText ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.HowDharmaWorksContainer .FeaturesText ul li::before {
+  content: '';
+  background-color: #dee2ef;
+  margin-left: -1.5rem;
+  margin-right: 0.75rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.HowDharmaWorksContainer .FeaturesText li {
+  margin-top: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  color: #6e7898;
+  font-size: 0.875rem;
+  line-height: 26px;
+}
+
+.HowDharmaWorksContainer .FeaturesText li::first-line {
+  /* margin-left: 0.5rem; */
+}
+
+@media screen and (max-width: 639px) {
+  .HowDharmaWorksContainer .TechStack {
+    display: none;
+  }
+  .HowDharmaWorksContainer .Feature img {
+    display: block;
+  }
+}

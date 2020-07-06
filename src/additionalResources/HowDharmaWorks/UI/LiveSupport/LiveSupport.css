@@ -1,0 +1,10 @@
+.LiveSupport {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #1f2a4b;
+}

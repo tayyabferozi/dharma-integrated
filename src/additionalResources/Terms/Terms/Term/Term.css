@@ -1,0 +1,14 @@
+h4.TermHeading {
+  text-align: left;
+  color: #1f2a4b;
+  margin-bottom: 0.5rem;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 576px) {
+  h4.TermHeading {
+    max-width: 90%;
+  }
+}

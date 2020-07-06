@@ -1,0 +1,36 @@
+.Careers .Article .Row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.Careers .Article .Col.ColImg img {
+  max-width: 600px !important;
+}
+
+.Careers .Article .Col.ColText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 !important;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 900px) {
+  .Careers .Article .Row {
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 3.75rem;
+  }
+
+  .Careers .Article .Col.ColImg img {
+    width: 100%;
+  }
+
+  .Careers .Article .Col.ColText {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+    text-align: center;
+    padding: 0 !important;
+  }
+}

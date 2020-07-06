@@ -1,0 +1,32 @@
+.HowDharmaWorksContainer .Navbar {
+  padding: 3.75rem;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 6.25rem;
+}
+
+.HowDharmaWorksContainer .Navbar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .HowDharmaWorksContainer .Navbar {
+    padding: 3rem 3rem 0;
+  }
+}
+
+@media screen and (max-width: 831px) {
+  .HowDharmaWorksContainer .Navbar {
+    padding: 2rem 2rem 0;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .HowDharmaWorksContainer .Navbar {
+    padding: 1.5rem 1.5rem 0;
+  }
+}

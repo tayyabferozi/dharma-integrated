@@ -1,0 +1,124 @@
+.FirstOfKind {
+  margin: 12.5rem 0;
+  position: relative;
+}
+
+.FirstOfKind h2 {
+  line-height: 75px;
+}
+
+.FirstOfKind p {
+  max-width: 27.5rem;
+  margin: 0 auto;
+}
+
+.FirstOfKind img {
+  max-width: 28.75rem;
+  display: block;
+  width: 100%;
+  box-shadow: rgba(255, 255, 255, 0.09) 0px 20px 40px,
+    rgba(31, 42, 75, 0.192) 0px 20px 40px;
+  border-radius: 4px;
+  margin: 0 auto 4rem;
+}
+
+.Rest {
+  position: relative;
+  top: -11rem;
+  margin-bottom: -11rem;
+}
+
+.GradientAnimation {
+  background: repeating-linear-gradient(
+      -45deg,
+      rgb(0, 84, 253) 0%,
+      rgb(255, 25, 247) 7.14%,
+      rgb(255, 46, 93) 14.28%,
+      rgb(255, 170, 7) 21.42%,
+      rgb(255, 170, 7) 28.56%,
+      rgb(255, 46, 93) 35.7%,
+      rgb(255, 25, 247) 42.84%,
+      rgb(0, 84, 253) 50%
+    )
+    0% 0% / 600vw 600vw;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 10s linear 0s infinite normal forwards running GradientAnimation;
+}
+
+.FirstOfKind .Animation {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.FirstOfKind .Animation .AnimationOuterBox {
+  background-color: rgb(13, 14, 23);
+  width: 300px;
+  height: 300px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 26.3527px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: rgb(34, 36, 50);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: BoxAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.FirstOfKind .Animation .AnimationInnerBox {
+  background-color: rgb(13, 14, 23);
+  width: 150px;
+  height: 150px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 26.3527px;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: rgb(34, 36, 50);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 639px) {
+  .FirstOfKind {
+    margin: 6.25rem 0;
+  }
+  .FirstOfKind h2 {
+    line-height: 40px;
+  }
+  .FirstOfKind p {
+    max-width: 345px;
+  }
+}
+
+@keyframes BoxAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.85);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 600vw;
+  }
+}

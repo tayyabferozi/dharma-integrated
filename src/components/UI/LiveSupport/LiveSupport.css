@@ -1,0 +1,17 @@
+.LiveSupport {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #1f2a4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LiveSupport path {
+  transform: translate(20%, 20%);
+}

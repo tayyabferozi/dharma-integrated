@@ -1,0 +1,82 @@
+.Contact {
+  line-height: 1.5;
+}
+
+.TextCenter {
+  text-align: center !important;
+}
+
+.Contact h1,
+.Contact h2,
+.Contact h3,
+.Contact h4,
+.Contact h5,
+.Contact h6 {
+  color: #1f2a4b;
+}
+
+.Contact h1 {
+  font-weight: 700;
+  font-size: 5.375rem;
+  letter-spacing: -0.025em;
+}
+
+.Contact h2,
+.Contact h5 {
+  font-weight: 600;
+}
+
+.Contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.563rem;
+  line-height: 63px;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.Contact h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.Contact h5 {
+  font-size: 1.75rem;
+  margin-bottom: 1.563rem;
+}
+
+.Contact p {
+  color: #6e7898;
+  font-size: 0.875rem;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: left;
+}
+
+@media screen and (max-width: 1023px) {
+  .Contact h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Contact h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .Contact h1 {
+    font-size: 2.875rem;
+  }
+
+  .Contact h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .Contact h2 {
+    font-size: 1.25rem;
+  }
+}

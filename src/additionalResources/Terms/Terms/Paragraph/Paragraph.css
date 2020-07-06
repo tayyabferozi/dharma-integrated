@@ -1,0 +1,23 @@
+.Terms .TermsParagraph {
+  color: #8b93ad;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: left;
+  display: inline-block;
+  width: 70%;
+  line-height: 26px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.Terms .TermsParagraph.TextCenter {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 576px) {
+  .Terms .TermsParagraph {
+    width: 90%;
+  }
+}

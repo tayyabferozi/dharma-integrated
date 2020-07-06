@@ -1,0 +1,75 @@
+.Get {
+  padding: 0 1.875rem;
+}
+
+.Get h2 {
+  font-size: 4.125rem;
+  margin-bottom: 0;
+}
+
+.Get .Main {
+  padding: 8.75rem 0;
+  background-color: rgb(13, 14, 23);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.Get .Main p {
+  max-width: 21.25rem;
+  margin: 2rem auto 0;
+}
+
+.Get .ButtonContainer {
+  max-width: 30rem;
+  width: 50%;
+  height: 11.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.875rem auto 0;
+}
+
+.Get .ButtonContainer button {
+  width: 13.625rem;
+  height: 5.313rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 1.563rem;
+  background-size: cover;
+  border-radius: 14px;
+  box-shadow: rgba(31, 42, 75, 0.11) 0px 5px 10px;
+}
+
+.Get .ButtonContainer button:first-child {
+  background-image: url("../../media/AppleGradient.jpg");
+}
+
+.Get .ButtonContainer button:last-child {
+  background-image: url("../../media/GoogleGradient.png");
+}
+
+.Get .ButtonContainer .Large {
+  font-size: 1.5rem;
+}
+
+.Get .ButtonContainer .Large:last-child {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 639px) {
+  .Get h2 {
+    font-size: 2.188rem;
+  }
+
+  .Get .Main p {
+    margin-top: 1.75rem;
+  }
+
+  .Get .ButtonContainer {
+    flex-direction: column;
+  }
+}

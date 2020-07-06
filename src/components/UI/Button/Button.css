@@ -1,0 +1,56 @@
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0 1rem;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  color: #1f2a4b;
+}
+
+button.Login {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px;
+  color: #fff;
+  opacity: 1;
+  padding: 0.8rem 1rem;
+  margin: 5px 0 5px 1rem;
+  border-radius: 25px;
+  transition: all 0.15s ease;
+}
+
+button.Login:hover {
+  background: linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+button.Gradient {
+  margin: 2.625rem 0 0;
+  padding: 0.75rem 2rem;
+  box-shadow: #fff 0px 0px 0px 1px;
+  border-radius: 25px;
+  line-height: 1.2;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%);
+  -webkit-background-clip: text;
+  transition: 0.2s ease;
+}
+
+button.Gradient:hover {
+  -webkit-text-fill-color: #fff;
+  -webkit-background-clip: border-box;
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 639px) {
+  button.HideSm {
+    display: none;
+  }
+}

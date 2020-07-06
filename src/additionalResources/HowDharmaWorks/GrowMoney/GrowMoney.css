@@ -1,0 +1,45 @@
+.HowDharmaWorksContainer .GrowMoney {
+  margin-top: 12.5rem;
+}
+
+.HowDharmaWorksContainer .GrowMoney p {
+  margin-top: 2rem;
+  max-width: 32.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.2px;
+}
+
+.HowDharmaWorksContainer .GrowMoney .GrowMoneyAnimator {
+  -webkit-text-fill-color: transparent;
+  background: repeating-linear-gradient(
+      -45deg,
+      rgb(0, 84, 253) 0%,
+      rgb(255, 25, 247) 7.14%,
+      rgb(255, 46, 93) 14.28%,
+      rgb(255, 170, 7) 21.42%,
+      rgb(255, 170, 7) 28.56%,
+      rgb(255, 46, 93) 35.7%,
+      rgb(255, 25, 247) 42.84%,
+      rgb(0, 84, 253) 50%
+    )
+    0% 0% / 600vw 600vw;
+  background-clip: text;
+  animation: 10s linear 0s infinite normal forwards running grow-money-animation;
+}
+
+@keyframes grow-money-animation {
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position-x: 600vw;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .HowDharmaWorksContainer .GrowMoney {
+    margin-top: 6.25rem;
+  }
+}

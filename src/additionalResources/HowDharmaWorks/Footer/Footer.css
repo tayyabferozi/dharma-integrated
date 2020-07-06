@@ -1,0 +1,16 @@
+.HowDharmaWorksContainer .Footer {
+  margin: 1.375rem 0;
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.HowDharmaWorksContainer .Footer > * {
+  margin: 1.375rem;
+}
+
+@media screen and (max-width: 639px) {
+  .HowDharmaWorksContainer .Footer {
+    flex-direction: column;
+  }
+}

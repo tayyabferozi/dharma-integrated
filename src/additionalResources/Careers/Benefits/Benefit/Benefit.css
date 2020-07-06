@@ -1,0 +1,18 @@
+.Careers .Benefit {
+  margin: 0 0 2rem;
+  max-width: 49%;
+}
+
+.Careers .Benefit p {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 900px) {
+  .Careers .Benefit {
+    max-width: 100%;
+  }
+
+  .Careers .Benefit p {
+    margin-right: 50px;
+  }
+}

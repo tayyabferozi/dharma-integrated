@@ -1,0 +1,55 @@
+.HowDharmaWorksContainer .Compound {
+  margin-top: 12.5rem;
+  padding: 0 30px;
+}
+
+.HowDharmaWorksContainer .Compound h2 {
+  max-width: 37.228rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.HowDharmaWorksContainer .Compound p {
+  margin-top: 2rem;
+  max-width: 45.625rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.HowDharmaWorksContainer .Compound .VectorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+.HowDharmaWorksContainer .Compound .vector1,
+.HowDharmaWorksContainer .Compound .vector2 {
+  width: 5.25rem;
+  height: 5.25rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HowDharmaWorksContainer .Compound .vector1 {
+  margin-right: -5px;
+  background-image: linear-gradient(
+    rgb(76, 219, 152) 0%,
+    rgb(37, 181, 95) 100%
+  );
+}
+
+.HowDharmaWorksContainer .Compound .vector2 {
+  margin-left: -5px;
+  background-size: 280%;
+  background-position: center top;
+  background-image: url('../../../assets/compoundGradient.jpg');
+}
+
+@media screen and (max-width: 639px) {
+  .HowDharmaWorksContainer .Compound {
+    margin-top: 6.25rem;
+  }
+}

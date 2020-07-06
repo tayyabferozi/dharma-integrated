@@ -1,0 +1,49 @@
+.Keys {
+  margin: 12.5rem 0;
+  padding: 0 1.25rem;
+}
+
+.Keys p {
+  margin: 1rem auto 0;
+  max-width: 37.5rem;
+}
+
+.Keys .Text {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  margin-top: 3.5rem;
+}
+
+.Keys .Text h2 {
+  line-height: 75px;
+}
+
+.Keys .Image {
+  text-align: center;
+}
+
+.Keys img {
+  max-width: 44rem;
+  width: 100%;
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
+@media screen and (max-width: 639px) {
+  .Keys {
+    margin: 6.25rem 0 !important;
+    margin-bottom: 12.5rem;
+  }
+
+  .Keys .Text h2 {
+    line-height: 40px;
+    letter-spacing: -0.85px;
+  }
+
+  .Keys .Text {
+    margin-top: 0rem;
+  }
+}

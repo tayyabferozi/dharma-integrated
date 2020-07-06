@@ -1,0 +1,56 @@
+.BlogContainer button {
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 0;
+  color: #6e7898;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-right: 3px;
+  /* transition: all 0.15s ease; */
+}
+
+.BlogContainer button:hover {
+  color: #151f40;
+}
+
+.BlogContainer button.Login {
+  box-shadow: #dee2ef 0px 0px 0px 1px;
+  color: #1f2a4b;
+  opacity: 1;
+  padding: 0.5rem 1rem;
+  margin-left: 1.25rem;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.15s ease;
+}
+
+.BlogContainer button.Login:hover {
+  background-color: #1f2a4b;
+  color: #fff;
+}
+
+.BlogContainer button.Gradient {
+  margin: 2.625rem 0 0;
+  padding: 0.75rem 2rem;
+  box-shadow: #dee2ef 0px 0px 0px 1px;
+  border-radius: 25px;
+  line-height: 1.2;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%);
+  -webkit-background-clip: text;
+  transition: 0.2s ease;
+}
+
+.BlogContainer button.Gradient:hover {
+  -webkit-text-fill-color: #fff;
+  -webkit-background-clip: border-box;
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 639px) {
+  .BlogContainer button.HideSm {
+    display: none;
+  }
+}

@@ -1,0 +1,48 @@
+.SmartWallet .Features {
+  margin-top: 8rem;
+  margin-bottom: 12.5rem;
+}
+
+.SmartWallet .FeaturesBoxContainer {
+  display: flex;
+  max-width: 60.625rem;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.SmartWallet .FeaturesBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 33.33%;
+  margin: auto;
+}
+
+.SmartWallet .FeaturesBox p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 639px) {
+  .SmartWallet .FeaturesBoxContainer {
+    flex-direction: column;
+  }
+
+  .SmartWallet .Features {
+    margin-top: 3.75rem;
+    margin-bottom: 6.25rem;
+  }
+
+  .SmartWallet .FeaturesBox {
+    max-width: 100%;
+  }
+
+  .SmartWallet .Features h2 {
+    letter-spacing: -0.85px;
+  }
+
+  .SmartWallet .Features p {
+    font-size: 0.938rem;
+    max-width: 17.5rem;
+  }
+}

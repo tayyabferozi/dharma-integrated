@@ -1,0 +1,61 @@
+.Careers .Roles {
+  margin-bottom: 7.5rem;
+}
+
+.Careers .Roles h3 {
+  font-size: 10rem;
+  margin-bottom: 3.125rem;
+  text-align: center;
+}
+
+.Careers .Roles p {
+  margin-bottom: 3.75rem;
+}
+
+.Careers .RoleBox {
+  max-width: 34.375rem;
+  padding: 3px;
+  margin: 1.25rem auto;
+  background: linear-gradient(
+    87.4deg,
+    #fad14b,
+    #f38951 35.05%,
+    #a9b7d9 68.99%,
+    #fe10f4 100.7%
+  );
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Careers .RoleBox:hover {
+  transform: scale(1.05);
+}
+
+.Careers .RoleInner {
+  padding: 3.125rem;
+  background-color: #07051e;
+}
+
+.Careers .Roles button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-family: akkurat;
+}
+
+@media screen and (max-width: 900px) {
+  .Careers .RoleBox {
+    text-align: center;
+  }
+  .Careers .Roles p {
+    display: none;
+  }
+
+  .Careers .Roles h3 {
+    font-size: 6rem;
+  }
+}

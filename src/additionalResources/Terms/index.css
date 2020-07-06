@@ -1,0 +1,30 @@
+html {
+  width: 100%;
+}
+
+.Terms ::selection {
+  background-color: #ff5cdd;
+  color: #fff;
+}
+
+.Terms h1,
+.Terms h2,
+.Terms h3,
+.Terms h4,
+.Terms h5,
+.Terms h6 {
+  font-weight: normal;
+}
+
+.Terms ul {
+  list-style-position: outside;
+  padding: 0.7rem 3rem;
+}
+
+.Terms li {
+  padding-bottom: 1rem;
+}
+
+.Terms .Hidden {
+  overflow: hidden;
+}

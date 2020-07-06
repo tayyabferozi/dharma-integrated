@@ -1,0 +1,78 @@
+.SmartWallet * {
+  color: #fff;
+}
+
+.SmartWallet {
+  background-color: #000;
+}
+
+.SmartWallet h1,
+.SmartWallet h2,
+.SmartWallet h3,
+.SmartWallet h4,
+.SmartWallet h5,
+.SmartWallet h6 {
+  color: #fff;
+  font-family: 'Graphik';
+  font-weight: 600;
+}
+
+.SmartWallet h2,
+.SmartWallet h5 {
+  font-family: 'Graphik';
+  font-weight: 600;
+}
+
+.SmartWallet h2 {
+  font-size: 4.125rem;
+  margin-bottom: 1.563rem;
+  line-height: 63px;
+  letter-spacing: -2px;
+  max-width: 63.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.SmartWallet h3 {
+  font-family: 'Graphik';
+  font-weight: 600;
+}
+
+.SmartWallet h5 {
+  font-size: 1.75rem;
+  margin-bottom: 1.563rem;
+}
+
+.SmartWallet p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #cccccc;
+  text-align: center;
+}
+
+.SmartWallet p.Mono {
+  font-family: 'SFMono';
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.SmartWallet ::selection {
+  background-color: #ff33d4;
+  color: #fff;
+}
+
+@media screen and (max-width: 639px) {
+  .SmartWallet h2 {
+    font-size: 2.188rem;
+    line-height: 1.13;
+    letter-spacing: -0.85px;
+  }
+  .SmartWallet p {
+    font-size: 15px;
+  }
+}

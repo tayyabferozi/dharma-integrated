@@ -1,0 +1,123 @@
+.Careers .Hero {
+  padding: 4rem 0;
+}
+
+.Careers .Hero .Logo {
+  width: 3.75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Careers .Hero h1 {
+  font-size: 13.75rem;
+  max-width: 60.156rem;
+  line-height: 11.375rem;
+  text-align: center;
+  color: #fff;
+  margin: 9% auto 1.25rem;
+  position: relative;
+  background-image: url('../../../assets/squiggle.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Careers .Hero h1 .Squiggle {
+  position: absolute;
+  left: 0;
+}
+
+.Careers .Hero h1 .Bitcoin {
+  position: absolute;
+  left: -40px;
+  top: 22%;
+  width: 8.125rem;
+}
+
+.Careers .Hero h1 .Ethereum {
+  position: absolute;
+  right: -60px;
+  top: 22%;
+  width: 8.125rem;
+}
+
+.Careers .Hero p {
+  margin: auto;
+  text-align: center;
+  margin-top: 1.875rem;
+  max-width: 43.75rem;
+}
+
+.Careers .Hero button {
+  outline: none;
+  border: none;
+  display: block;
+  margin: 3.75rem auto 0;
+  border-radius: 5px;
+  padding: 1.5rem 3.5rem;
+  background-image: url('../../../assets/gradient.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.Careers .Hero button:hover {
+  transform: translateY(-4px);
+  opacity: 0.95;
+}
+
+@media screen and (max-width: 1150px) {
+  .Careers .Hero h1 {
+    font-size: 10rem;
+    max-width: 43.75rem;
+    line-height: 8.75rem;
+  }
+
+  .Careers .Hero p {
+    max-width: 680px;
+  }
+
+  .Careers .Hero h1 .Bitcoin {
+    left: 0;
+    top: 18%;
+    width: 6.25rem;
+  }
+
+  .Careers .Hero h1 .Ethereum {
+    right: 0;
+    top: 18%;
+    width: 6.25rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Careers .Hero .Logo {
+    width: 2.5rem;
+  }
+  .Careers .Hero {
+    padding-top: 2.5rem;
+  }
+
+  .Careers .Hero h1 {
+    font-size: 6.625rem;
+    margin-bottom: 0;
+    background: none;
+    max-width: 28.984rem;
+    line-height: 5.625rem;
+  }
+
+  .Careers .Hero h1 .Bitcoin,
+  .Careers .Hero h1 .Ethereum {
+    display: none;
+  }
+
+  .Careers .Hero button {
+    margin-top: 1.25rem;
+  }
+}

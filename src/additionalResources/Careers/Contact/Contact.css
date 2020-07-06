@@ -1,0 +1,17 @@
+.Careers .Contact h5 {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Careers .Contact p {
+  max-width: 31.125rem;
+  text-align: center;
+  margin: 0 auto 3.75rem;
+}
+
+.Careers .Contact img {
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,69 @@
+.BlogContainer .BoxContainer {
+  padding: 1rem;
+  max-width: 33.333%;
+}
+
+.BlogContainer .BlogBox {
+  height: 100%;
+  justify-content: center;
+  box-shadow: 0 20px 40px rgba(31, 42, 75, 0.1);
+  cursor: pointer;
+  transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1),
+    -webkit-transform 0.45s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.BlogContainer .GradientBg {
+  margin-top: 1rem;
+  font-weight: 500;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(0.339turn, #5722ff 12.7%, #c603ff 86.62%);
+  background-clip: text;
+}
+
+.BlogContainer .BlogBox:hover {
+  transform: scale3d(1.03, 1.03, 1.03) translate3d(0, -10px, 0);
+}
+
+.BlogContainer .BlogBox .BoxImage {
+  max-width: 100%;
+}
+
+.BlogContainer .BoxText {
+  margin-top: -1rem;
+  padding: 2rem;
+}
+
+.BlogContainer .BoxText h2 {
+  text-align: left;
+}
+
+.BlogContainer img:not([src]) {
+  display: none;
+}
+
+.BlogContainer img:not([src]) + .BoxText {
+  margin-top: 0rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .BlogContainer .BoxContainer {
+    max-width: 23rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .BlogContainer .BoxContainer {
+    margin: 0;
+    max-width: 21rem;
+  }
+
+  .BlogContainer .BoxContainer {
+    max-width: 19rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .BlogContainer .BoxContainer {
+    max-width: 100%;
+  }
+}

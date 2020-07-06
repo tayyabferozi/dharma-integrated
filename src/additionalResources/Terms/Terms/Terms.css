@@ -1,0 +1,35 @@
+.Terms {
+  padding: 2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Terms h1.TermsHeading {
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #1f2a4b;
+  margin: 1rem;
+  font-weight: 600;
+}
+
+.Terms h2.TermSectionHeading {
+  color: #1f2a4b;
+  text-align: left;
+  margin: 2.5rem 0;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .Terms h1.TermsHeading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Terms h2.TermSectionHeading {
+    max-width: 90%;
+  }
+}

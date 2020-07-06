@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Druk';
+  src: local('Druk'), url(../../fonts/DrukCond-Super-Reduced.ttf);
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: local('GraphikMedium'), url(../../fonts/GraphikMedium.otf);
+}
+
+@font-face {
+  font-family: 'Akkurat';
+  src: local('AkkuratMedium'), url(../../fonts/Akkurat-Mono.OTF);
+}
+
+html {
+  padding: 0 !important;
+}
+
+.TextCenter {
+  text-align: center !important;
+}
+
+.Careers h1,
+.Careers h2,
+.Careers h3,
+.Careers h4,
+.Careers h5,
+.Careers h6 {
+  color: #fff;
+  font-weight: normal;
+}
+
+.Careers h1,
+.Careers h3 {
+  font-family: 'Druk';
+  font-stretch: ultra-condensed;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+.Careers h2,
+.Careers h5 {
+  font-family: 'Graphik';
+  font-weight: 600;
+}
+
+.Careers h2 {
+  font-size: 3rem;
+  margin-bottom: 1.563rem;
+  line-height: 48px !important;
+}
+
+.Careers h5 {
+  font-size: 1.75rem;
+  margin-bottom: 1.563rem;
+}
+
+.Careers p {
+  font-family: 'Akkurat';
+  color: #9c9cb3;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.Careers {
+  padding: 0 30px;
+  background-color: #07051e;
+  position: relative;
+}
+
+.Careers .ArticlesContainer {
+  padding: 12.5rem 0;
+}
+
+@media screen and (max-width: 900px) {
+  .Careers .ArticlesContainer {
+    padding: 0;
+  }
+}
+
+.Careers .Strip {
+  transform: translate(-2rem);
+  margin-top: 10rem;
+  height: 10px;
+  width: 98.7vw;
+  background: linear-gradient(
+    87.4deg,
+    #fad14b,
+    #f38951 35.05%,
+    #a9b7d9 68.99%,
+    #fe10f4 100.7%
+  );
+}

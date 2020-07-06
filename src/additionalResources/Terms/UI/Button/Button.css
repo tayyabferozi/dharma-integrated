@@ -1,0 +1,19 @@
+.Terms .PrimaryButton {
+  padding: 0.85rem 1rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0.125rem;
+  color: #1f2a4b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Terms .PrimaryButton {
+  color: #8b93ad;
+}
+
+.Terms .PrimaryButton:hover {
+  color: #1f2a4b;
+}

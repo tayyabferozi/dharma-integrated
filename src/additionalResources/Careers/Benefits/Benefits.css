@@ -1,0 +1,24 @@
+.Careers .Benefits {
+  margin: 0 0 10rem;
+}
+
+.Careers .BenefitsContainer {
+  max-width: 900px;
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Careers .Benefits h2 {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .Careers .BenefitsContainer {
+    padding: 0;
+  }
+}
