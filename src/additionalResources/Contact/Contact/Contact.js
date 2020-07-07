@@ -16,7 +16,7 @@ const Contact = () => {
       </h2>
 
       <h3>CONTACT</h3>
-      <h3>hello@buzzworthystudio.com</h3>
+      <h3 className="LongText">hello@buzzworthystudio.com</h3>
 
       <div className="CardContainer">
         {/* <a href="#Contact"> */}

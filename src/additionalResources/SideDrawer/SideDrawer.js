@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
 import './SideDrawer.css';
 
@@ -12,6 +13,23 @@ const SideDrawer = () => {
     sideDrawerWrapper.classList.remove('Active');
     body.classList.remove('Inactive');
   };
+
+  useEffect(() => {
+    $('.NavItem').click(function() {
+      //   let RelaventDropdownIndicator = $(this).find('.DropdownIndicator');
+      //   if(RelaventDropdownIndicator.css('transform') === "135deg"){
+      //     RelaventDropdownIndicator.css('transform', 'rotate(-45deg)');
+      //   }
+
+      $(this)
+        .find('.DropdownIndicator')
+        .toggleClass('Up');
+      $(this)
+        .next()
+        .find('.DropDownContent')
+        .slideToggle();
+    });
+  }, []);
   return (
     <Fragment>
       <div
@@ -33,7 +51,7 @@ const SideDrawer = () => {
               <path d="M15.65,29.55l9.74-6V2a23.9,23.9,0,0,0-9.74,2.33Zm-2.08,1.27V5.5A24,24,0,0,0,4.41,36.43Zm13.91,7.49,9.74-6V4.81a23.77,23.77,0,0,0-9.74-2.73Zm-2.09,1.3V26l-20,12.26a24.09,24.09,0,0,0,8.55,8.5ZM39.3,31l10.62-6.58a23.91,23.91,0,0,0-3.09-10.27L39.3,18.55Zm0-24.93V16.2l6.46-3.77A24,24,0,0,0,39.3,6.06Zm0-2.41h0A26,26,0,1,1,26,0,26,26,0,0,1,39.3,3.66ZM16,47.8A24,24,0,0,0,50,26.77Z"></path>
             </svg> */}
           </div>
-          <div
+          {/* <div
             style={{
               fontSize: '4rem',
               fontWeight: '100',
@@ -42,7 +60,7 @@ const SideDrawer = () => {
             }}
             onClick={SideDrawerCloseHandler}>
             &times;
-          </div>
+          </div> */}
         </div>
         <div className="SearchContainer">
           <div className="Search">
@@ -51,10 +69,39 @@ const SideDrawer = () => {
           </div>
           <button>English</button>
         </div>
-        <div className="NavItem">Payments Network</div>
-        <div className="NavItem">Customers</div>
-        <div className="NavItem">Resources</div>
-        <div className="NavItem">About Us</div>
+        <div className="NavItemContainer">
+          <div className="NavItem">
+            <span>Payments Network</span>
+            <span className="DropdownIndicator"></span>
+          </div>
+          <Link to="/faq">
+            <div className="DropDownContent">FAQ</div>
+          </Link>
+        </div>
+        <div className="NavItemContainer">
+          <div className="NavItem">
+            <span>Customers</span> <span className="DropdownIndicator"></span>
+          </div>
+          <Link to="/login">
+            <div className="DropDownContent">Log In</div>
+          </Link>
+        </div>
+        <div className="NavItemContainer">
+          <div className="NavItem">
+            <span>Resources</span> <span className="DropdownIndicator"></span>
+          </div>
+          <Link to="/smart-wallet">
+            <div className="DropDownContent">Smart Wallet</div>
+          </Link>
+        </div>
+        <div className="NavItemContainer">
+          <div className="NavItem">
+            <span>About Us</span> <span className="DropdownIndicator"></span>
+          </div>
+          <Link to="/how-it-works">
+            <div className="DropDownContent">How It Works</div>
+          </Link>
+        </div>
         <Link to="/contact">
           <button className="ContactUs">Contact Us</button>
         </Link>

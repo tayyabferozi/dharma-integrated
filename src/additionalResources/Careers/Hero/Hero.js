@@ -8,7 +8,8 @@ import logo from '../../../assets/logo.svg';
 const Hero = () => {
   return (
     <div className="Hero">
-      <img src={logo} alt="logo" className="Logo" />
+      {/* <img src={logo} alt="logo" className="Logo" /> */}
+      <img className="Logo" src={require('../../../assets/logo-white.png')} />
       <h1>
         <img src={bitcoin} alt="bitcoin" className="Bitcoin" />
         MAKE MONEY MAGICAL AT DHARMA

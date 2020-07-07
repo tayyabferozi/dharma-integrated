@@ -21,8 +21,11 @@
     html {
       padding: 0 !important;
     }
-    body.Inactive {
-      overflow-y: hidden;
+
+    @media screen and (max-width: 768px) {
+      body.Inactive {
+        overflow-y: hidden;
+      }
     }
     .PreloaderRoot {
       background-color: rgb(255, 255, 255);

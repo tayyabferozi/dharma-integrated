@@ -11,10 +11,6 @@
   transition: 0.75s ease;
 }
 
-.SideDrawerWrapper.Active {
-  display: block;
-}
-
 .SideDrawer {
   width: 90%;
   display: none;
@@ -26,19 +22,14 @@
   position: absolute;
   z-index: 501;
   right: -90%;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   transition: 0.75s ease;
   animation: goFromview 0.75s ease;
 }
 
 .SideDrawer * {
   color: rgba(0, 0, 0, 0.65) !important;
-}
-
-.SideDrawer.Active {
-  display: block;
-  animation: comeInView 0.75s ease;
-  animation-fill-mode: forwards;
 }
 
 @keyframes comeInView {
@@ -67,13 +58,18 @@
   padding: 1rem 0;
 }
 
+.SideDrawer > .SearchContainer button {
+  padding: 0.75rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
 .SideDrawer > .SearchContainer input[type='search'] {
   padding: 0.5rem;
   border: none;
   outline: none;
   font-size: 1.25rem;
-  margin-right: 1rem;
-  max-width: 20rem;
+  width: 12rem;
   display: block;
   background-color: rgb(231, 235, 235);
 }
@@ -84,15 +80,15 @@
 
 .SideDrawer .Search > img {
   position: absolute;
-  right: 1.5rem;
+  right: 0.5rem;
   top: 50%;
   transform: translate(0, -50%);
   width: 1.5rem;
 }
 
-.SideDrawer button {
+.SideDrawer button.ContactUs {
   padding: 0.75rem 0.5rem !important;
-  margin: 0 !important;
+  margin-left: 0 !important;
   border: 1px solid #e3e3e3;
   /* color: #535a72 ; */
   color: #fff !important;
@@ -101,8 +97,11 @@
 
 .SideDrawer .NavItem {
   text-align: left;
-  padding: 1rem 0;
+  padding: 1.25rem 0;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .SideDrawer .ContactUs {
@@ -111,7 +110,27 @@
   border-radius: 5px;
   color: #fff;
   background-color: #1172e5;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
+}
+
+.SideDrawer .DropdownIndicator {
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+  display: inline-block;
+  border-bottom: 2px solid #000000a6;
+  border-left: 2px solid #000000a6;
+  transition: 0.3s ease;
+  transform: rotate(-45deg);
+}
+
+.SideDrawer .DropdownIndicator.Up {
+  transform: rotate(135deg);
+}
+
+.SideDrawer .DropDownContent {
+  display: none;
+  text-align: left !important;
 }
 
 .SideDrawer .SocialWrapper {
@@ -129,5 +148,17 @@
 @media screen and (max-width: 768px) {
   .SideDrawer {
     padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .SideDrawer.Active {
+    display: block;
+    animation: comeInView 0.75s ease;
+    animation-fill-mode: forwards;
+  }
+
+  .SideDrawerWrapper.Active {
+    display: block;
   }
 }

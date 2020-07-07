@@ -2,9 +2,13 @@
   padding: 0 2rem;
 }
 
+.LongText {
+  font-size: 1.25rem !important;
+}
+
 @media screen and (max-width: 576px) {
   .Contact {
-    padding: 0;
+    padding: 0 0.5rem;
   }
 }
 
@@ -41,7 +45,7 @@
 }
 
 .Contact a {
-  width: 21.25rem;
+  /* width: 21.25rem; */
   /* width: 100%; */
   display: block;
   margin: 0 0 3rem;
@@ -132,7 +136,7 @@
 }
 
 .ContactForm .FormControl select,
-.ContactForm .FormControl input[type="email"] {
+.ContactForm .FormControl input[type='email'] {
   width: 50%;
   display: block;
   text-align: center;
