@@ -3,6 +3,7 @@ import './FAQ.css';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import FAQListingItem from '../../additionalResources/faq/listItems/ListingItem';
+import Navbar from './Navbar/Navbar';
 
 const Header = styled.p`
   letter-spacing: -3.36px;
@@ -20,11 +21,11 @@ const Header = styled.p`
   width: 100%;
   white-space: pre-wrap;
   transition: all 300ms ease-in-out 0s;
+  background-image: url('/images/bg/Gradient.jpg');
   background-size: 200%;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-position: center top;
-  background-image: url('/images/bg/Gradient.jpg');
 `;
 
 class FAQ extends Component {
@@ -71,6 +72,7 @@ class FAQ extends Component {
   render() {
     return (
       <div className="Faq_wrapper ">
+        <Navbar />
         <span>
           <Header className="faq_header">Frequently Asked Questions</Header>
         </span>

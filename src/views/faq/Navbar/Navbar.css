@@ -1,0 +1,44 @@
+.Faq_wrapper .Navbar {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.Faq_wrapper .Navbar .BlogLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  color: #1f2a4b;
+  font-weight: 600;
+}
+
+.Faq_wrapper .Navbar .BlogLogo svg {
+  margin-right: 1rem;
+}
+
+.Faq_wrapper .Navbar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .Faq_wrapper .Navbar {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Faq_wrapper .Navbar {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .Faq_wrapper .Navbar {
+    padding: 1.25rem;
+  }
+}

@@ -22,6 +22,10 @@
   font-size: 0.75rem;
 }
 
+.Contact .Footer > a {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 639px) {
   .Contact .Footer {
     margin-left: 1rem;

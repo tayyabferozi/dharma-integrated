@@ -162,3 +162,8 @@
     display: block;
   }
 }
+
+.Faq_wrapper .SideDrawer {
+  top: 1.5%;
+  transform: translateY(0);
+}

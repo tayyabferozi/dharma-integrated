@@ -89,15 +89,16 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-left: 400px;
-  padding-right: 400px;
+  /* padding-left: 400px;
+  padding-right: 400px; */
+  max-width: 30rem;
   box-sizing: border-box;
 }
 
 @media only screen and (max-width: 1280px) {
   .Faq_wrapper .follow_section {
-    padding-left: 350px;
-    padding-right: 350px;
+    /* padding-left: 350px;
+    padding-right: 350px; */
   }
 }
 
