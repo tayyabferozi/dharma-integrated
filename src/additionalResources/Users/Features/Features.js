@@ -21,7 +21,7 @@ const Features = () => {
               24/7/365.
             </li>
             <li>
-              Every Dharma account is built on top of the Dharma Smart Wallet,
+              Every Dharma account is built on top of the Dharma Retailers,
               which means that you — and only you — will be able to control your
               money.
             </li>

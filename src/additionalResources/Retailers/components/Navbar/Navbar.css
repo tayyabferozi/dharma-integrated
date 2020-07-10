@@ -4,7 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
+  margin-bottom: 0;
 }
 
 .SmartWallet .Navbar nav {

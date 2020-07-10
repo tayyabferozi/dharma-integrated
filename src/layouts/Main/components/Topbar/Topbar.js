@@ -10,6 +10,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Grid from '@material-ui/core/Grid';
 import '../../../../App.css';
 import PropTypes from 'prop-types';
+import $ from 'jquery';
+
+import SideDrawer from '../../../../additionalResources/SideDrawer/SideDrawer';
 
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 const useStyles = makeStyles(theme => ({
@@ -117,144 +120,163 @@ const Topbar = props => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
+  let hamburgerClickHandler;
+
+  hamburgerClickHandler = () => {
+    $('#SideDrawer').slideToggle();
+  };
+
   return (
-    <div
-      className={classes.root}
-      // style={{ background: "rgba(255, 255, 255, 0.9)", position: "absolute", top: 0, left: 0, right: 0, zIndex: 2, boxShadow: "5px 4px 8px 5px white" }}
-    >
-      <Grid
-        container
-        sm={12}
-        md={12}
-        lg={12}
-        style={{ backgroundColor: 'white', zIndex: '30' }}>
-        <div class="cssanimation sequence fadeInBottom" id="topbarAnim">
+    <div className="NavbarSideDrawerWrapper">
+      <div
+        className={classes.root}
+        // style={{ background: "rgba(255, 255, 255, 0.9)", position: "absolute", top: 0, left: 0, right: 0, zIndex: 2, boxShadow: "5px 4px 8px 5px white" }}
+      >
+        <Grid
+          container
+          sm={12}
+          md={12}
+          lg={12}
+          style={{ backgroundColor: 'white', zIndex: '30' }}>
+          <div class="cssanimation sequence fadeInBottom" id="topbarAnim">
+            <Grid
+              container
+              align="center"
+              justify="space-between"
+              id="desktop"
+              sm={12}
+              md={12}
+              lg={12}
+              style={{ zIndex: '30', paddingTop: '5vh' }}>
+              <Grid
+                item
+                sm={2}
+                md={2}
+                lg={2}
+                align="center"
+                style={{ marginTop: '3vh', paddingRight: '10vh' }}>
+                <img width="60" src={require('../../../../assets/logo.png')} />
+              </Grid>
+              <Grid
+                container
+                sm={6}
+                lg={4}
+                md={5}
+                style={{
+                  marginTop: '4vh',
+                  paddingRight: '8vh'
+                }}>
+                <Grid item md={2} sm={2} lg={2}>
+                  <IconButton>
+                    <Link to="/support">
+                      <Typography
+                        className={classes.FAQs}
+                        onMouseEnter={mouse}
+                        onMouseLeave={mouseout}
+                        id="colorstext">
+                        {' '}
+                        FAQs
+                      </Typography>
+                    </Link>
+                  </IconButton>
+                </Grid>
+                <Grid item md={4} sm={4} lg={4}>
+                  <IconButton>
+                    <Link to="/users">
+                      <Typography
+                        className={classes.FAQs}
+                        onMouseEnter={mouse1}
+                        onMouseLeave={mouseout1}
+                        id="colorstext1">
+                        {' '}
+                        Users
+                      </Typography>
+                    </Link>
+                  </IconButton>
+                </Grid>
+                <Grid item md={4} sm={4} lg={4}>
+                  <IconButton>
+                    <Link to="/retailers">
+                      <Typography
+                        className={classes.FAQs}
+                        onMouseEnter={mouse2}
+                        onMouseLeave={mouseout2}
+                        id="colorstext2">
+                        Retailers
+                      </Typography>
+                    </Link>
+                  </IconButton>
+                </Grid>
+                <Grid item md={2} sm={2} lg={2}>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    className={classes.GetStartedOnline}>
+                    Log In
+                  </Button>
+                  <Typography>{'  '}</Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+          </div>
           <Grid
             container
             align="center"
             justify="space-between"
-            id="desktop"
+            id="Mobile"
             sm={12}
             md={12}
             lg={12}
-            style={{ zIndex: '30', paddingTop: '5vh' }}>
+            style={{ zIndex: '30' }}>
             <Grid
               item
-              sm={2}
-              md={2}
-              lg={2}
-              align="center"
-              style={{ marginTop: '3vh', paddingRight: '10vh' }}>
+              xs={2}
+              align="left"
+              style={{
+                marginTop: '3vh',
+                marginBottom: '3vh',
+                paddingLeft: '2vh'
+              }}>
               <img width="60" src={require('../../../../assets/logo.png')} />
             </Grid>
             <Grid
               container
-              sm={6}
-              lg={4}
-              md={5}
-              style={{
-                marginTop: '4vh',
-                paddingRight: '8vh'
-              }}>
-              <Grid item md={2} sm={2} lg={2}>
+              align="center"
+              xs={6}
+              justify="space-between"
+              style={{ paddingTop: '4vh', paddingRight: '2vh' }}>
+              <Grid className="HideSm" item md={2} sm={2} lg={2} xs={5}>
                 <IconButton>
-                  <Link to="/faq">
-                    <Typography
-                      className={classes.FAQs}
-                      onMouseEnter={mouse}
-                      onMouseLeave={mouseout}
-                      id="colorstext">
-                      {' '}
-                      FAQs
-                    </Typography>
+                  <Link to="/support">
+                    <Typography className={classes.FAQs}> FAQs</Typography>
                   </Link>
                 </IconButton>
               </Grid>
-              <Grid item md={4} sm={4} lg={4}>
-                <IconButton>
-                  <Link to="/how-it-works">
-                    <Typography
-                      className={classes.FAQs}
-                      onMouseEnter={mouse1}
-                      onMouseLeave={mouseout1}
-                      id="colorstext1">
-                      {' '}
-                      How It Works
-                    </Typography>
-                  </Link>
-                </IconButton>
-              </Grid>
-              <Grid item md={4} sm={4} lg={4}>
-                <IconButton>
-                  <Link to="/smart-wallet">
-                    <Typography
-                      className={classes.FAQs}
-                      onMouseEnter={mouse2}
-                      onMouseLeave={mouseout2}
-                      id="colorstext2">
-                      Smart Wallet
-                    </Typography>
-                  </Link>
-                </IconButton>
-              </Grid>
-              <Grid item md={2} sm={2} lg={2}>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className={classes.GetStartedOnline}>
-                  Log In
-                </Button>
+              <Grid className="HideSm" item md={2} sm={2} lg={2} xs={7}>
+                <Link to="/login">
+                  <Button
+                    variant="contained"
+                    className={classes.GetStartedOnlineMobile}>
+                    Log In
+                  </Button>
+                </Link>
                 <Typography>{'  '}</Typography>
               </Grid>
-            </Grid>
-          </Grid>
-        </div>
-        <Grid
-          container
-          align="center"
-          justify="space-between"
-          id="Mobile"
-          sm={12}
-          md={12}
-          lg={12}
-          style={{ zIndex: '30' }}>
-          <Grid
-            item
-            xs={2}
-            align="left"
-            style={{
-              marginTop: '3vh',
-              marginBottom: '3vh',
-              paddingLeft: '2vh'
-            }}>
-            <img width="60" src={require('../../../../assets/logo.png')} />
-          </Grid>
-          <Grid
-            container
-            align="center"
-            xs={6}
-            justify="space-between"
-            style={{ paddingTop: '4vh', paddingRight: '2vh' }}>
-            <Grid item md={2} sm={2} lg={2} xs={5}>
-              <IconButton>
-                <Link to="/faq">
-                  <Typography className={classes.FAQs}> FAQs</Typography>
-                </Link>
-              </IconButton>
-            </Grid>
-            <Grid item md={2} sm={2} lg={2} xs={7}>
-              <Link to="/login">
-                <Button
-                  variant="contained"
-                  className={classes.GetStartedOnlineMobile}>
-                  Log In
-                </Button>
-              </Link>
-              <Typography>{'  '}</Typography>
+
+              <div
+                className="Hamburger"
+                style={{ marginLeft: 'auto', textAlign: 'left' }}
+                id="Hamburger"
+                onClick={hamburgerClickHandler}>
+                <div className="Line1" />
+                <div className="Line2" />
+                <div className="Line3" />
+              </div>
             </Grid>
           </Grid>
         </Grid>
-      </Grid>
+      </div>
+      <SideDrawer />
     </div>
   );
 };

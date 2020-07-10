@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
 import Button from '../UI/Button/Button';
 import SideDrawer from '../../../additionalResources/SideDrawer/SideDrawer';
@@ -9,16 +10,10 @@ const Navbar = () => {
   let hamburgerClickHandler;
 
   hamburgerClickHandler = () => {
-    const body = document.getElementsByTagName('body')[0];
-    const sideDrawer = document.getElementById('SideDrawer');
-    const sideDrawerWrapper = document.getElementById('SideDrawerWrapper');
-    sideDrawer.classList.add('Active');
-    sideDrawerWrapper.classList.add('Active');
-    body.classList.add('Inactive');
+    $('#SideDrawer').slideToggle();
   };
   return (
-    <Fragment>
-      <SideDrawer />
+    <div className="NavbarSideDrawerWrapper">
       <div className="Navbar">
         <span className="BlogLogo">
           {/* <svg
@@ -35,14 +30,14 @@ const Navbar = () => {
             style={{ width: '60px', marginRight: '1rem' }}
             src={require('../../../assets/logo.png')}
           />
-          Blog
+          Support
         </span>
         <div className="Nav">
-          <Link to="/how-it-works">
-            <Button>How It Works</Button>
+          <Link to="/users">
+            <Button>Users</Button>
           </Link>
-          <Link to="/smart-wallet">
-            <Button>Smart Wallet</Button>
+          <Link to="/retailers">
+            <Button>Retailers</Button>
           </Link>
           <Link to="/login">
             <Button type="Login">Login</Button>
@@ -57,7 +52,8 @@ const Navbar = () => {
           <div className="Line3" />
         </div>
       </div>
-    </Fragment>
+      <SideDrawer />
+    </div>
   );
 };
 

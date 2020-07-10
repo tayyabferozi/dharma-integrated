@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
 import Button from '../UI/Button/Button';
 import SideDrawer from '../../SideDrawer/SideDrawer';
@@ -9,16 +10,10 @@ const Navbar = () => {
   let hamburgerClickHandler;
 
   hamburgerClickHandler = () => {
-    const body = document.getElementsByTagName('body')[0];
-    const sideDrawer = document.getElementById('SideDrawer');
-    const sideDrawerWrapper = document.getElementById('SideDrawerWrapper');
-    sideDrawer.classList.add('Active');
-    sideDrawerWrapper.classList.add('Active');
-    body.classList.add('Inactive');
+    $('#SideDrawer').slideToggle();
   };
   return (
-    <Fragment>
-      <SideDrawer />
+    <div className="NavbarSideDrawerWrapper">
       <div className="Navbar">
         <span className="BlogLogo">
           {/* <svg
@@ -38,8 +33,8 @@ const Navbar = () => {
           Blog
         </span>
         <div className="Nav">
-          <Link to="/faq">
-            <Button>FAQs</Button>
+          <Link to="/support">
+            <Button>Support</Button>
           </Link>
           <Link to="/login">
             <Button type="Login">Login</Button>
@@ -54,7 +49,8 @@ const Navbar = () => {
           <div className="Line3" />
         </div>
       </div>
-    </Fragment>
+      <SideDrawer />
+    </div>
   );
 };
 

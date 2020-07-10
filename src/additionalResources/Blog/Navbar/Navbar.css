@@ -38,6 +38,13 @@
 
 @media screen and (max-width: 639px) {
   .BlogContainer .Navbar {
-    padding: 1.25rem;
+    padding: 24px 24px 1.25rem;
   }
+}
+
+.Hamburger {
+  height: 40;
+}
+.Navbar {
+  align-items: center !important;
 }

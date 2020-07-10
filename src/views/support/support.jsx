@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './FAQ.css';
+import './support.css';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import FAQListingItem from '../../additionalResources/faq/listItems/ListingItem';
+import FAQListingItem from '../../additionalResources/Support/listItems/ListingItem';
 import Navbar from './Navbar/Navbar';
 
 const Header = styled.p`
@@ -105,7 +105,7 @@ class FAQ extends Component {
           ))}
         </div>
         <div className="header_secondary_wrapper">
-          <p className="header_secondary">Smart Wallets</p>
+          <p className="header_secondary">Retailerss</p>
         </div>
         <div className="st_faq_listing_wrapper">
           {this.state.basicFaq.map(faq => (

@@ -33,3 +33,15 @@
     max-width: 90%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .Terms {
+    padding: 0;
+  }
+  .Terms .Navbar {
+    padding: 24px 24px 0;
+  }
+  .Terms .Navbar img {
+    width: 52px;
+  }
+}

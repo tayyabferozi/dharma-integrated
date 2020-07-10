@@ -38,8 +38,8 @@ const Navbar = () => {
           Contact Us
         </span>
         <div className="Nav">
-          <Link to="faq">
-            <Button>FAQs</Button>
+          <Link to="/support">
+            <Button>Support</Button>
           </Link>
           <Link to="login">
             <Button type="Login">Login</Button>

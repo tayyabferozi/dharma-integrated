@@ -49,3 +49,7 @@
     padding-bottom: 2.5rem;
   }
 }
+
+.SmartWallet .Footer a {
+  text-align: center;
+}

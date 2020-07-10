@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
 
 import Button from '../UI/Button/Button';
 import SideDrawer from '../../../SideDrawer/SideDrawer';
@@ -9,16 +10,10 @@ const Navbar = () => {
   let hamburgerClickHandler;
 
   hamburgerClickHandler = () => {
-    const body = document.getElementsByTagName('body')[0];
-    const sideDrawer = document.getElementById('SideDrawer');
-    const sideDrawerWrapper = document.getElementById('SideDrawerWrapper');
-    sideDrawer.classList.add('Active');
-    sideDrawerWrapper.classList.add('Active');
-    body.classList.add('Inactive');
+    $('#SideDrawer').slideToggle();
   };
   return (
-    <Fragment>
-      <SideDrawer />
+    <div className="NavbarSideDrawerWrapper">
       <div className="Navbar">
         {/* <svg
           width="52"
@@ -35,11 +30,11 @@ const Navbar = () => {
           src={require('../../../../assets/logo-white.png')}
         />
         <div className="Nav">
-          <Link to="/faq">
-            <Button>FAQs</Button>
+          <Link to="/support">
+            <Button>Support</Button>
           </Link>
-          <Link to="/how-it-works">
-            <Button responsiveness="HideSm">How it Works</Button>
+          <Link to="/users">
+            <Button responsiveness="HideSm">Users</Button>
           </Link>
           <Link to="/login">
             <Button type="Login">Log In</Button>
@@ -54,7 +49,8 @@ const Navbar = () => {
           <div className="Line3" style={{ background: '#fff' }} />
         </div>
       </div>
-    </Fragment>
+      <SideDrawer />
+    </div>
   );
 };
 

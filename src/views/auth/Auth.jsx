@@ -92,7 +92,7 @@ class Auth extends Component {
                   </div>
                 </div>
               </div>
-              <Link to="/faq">
+              <Link to="/support">
                 <button className="Login_button">Log In</button>
               </Link>
               <div className="or_login_wrapper">

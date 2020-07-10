@@ -206,26 +206,6 @@ const Landingpage = props => {
   };
 
   useEffect(() => {
-    // detectSwipe("SlidingAnim", paidHandler);
-    // inputRange = document.getElementsByClassName('pullee')[0];
-    // inputRange.min = 0;
-    // inputRange.max = maxValue;
-    // inputRange.addEventListener('mousedown', unlockStartHandler, false);
-    // inputRange.addEventListener('mousestart', unlockStartHandler, false);
-    // inputRange.addEventListener('touchstart', unlockStartHandler, false);
-    // inputRange.addEventListener('mouseup', unlockEndHandler, false);
-    // inputRange.addEventListener('touchend', unlockEndHandler, false);
-    // inputRange.addEventListener('input', sliderChangeHandler.bind(this), false);
-
-    //
-    //
-    //
-    //
-
-    //
-    //
-    //
-
     const sliderInitialWidth = $('.Slider').css('width');
 
     $('.Slider').on('touchstart', function(e) {
@@ -271,50 +251,9 @@ const Landingpage = props => {
       $('.SliderText').css('opacity', 1);
       $('.SliderText').css('transition-duration', '0.5s');
     });
+
+    console.log($('#Countup').children('span')[0]);
   }, []);
-
-  // let rafID;
-  // let currentValue;
-  // let maxValue = 1000;
-  // let speed = 100;
-  // let inputRange;
-
-  // function sliderChangeHandler(e) {
-  //   setSliderState(e.target.value);
-  // }
-
-  // function unlockStartHandler() {
-  //   window.cancelAnimationFrame(rafID);
-
-  //   currentValue = +this.value;
-  // }
-
-  // function unlockEndHandler() {
-  //   currentValue = +this.value;
-
-  //   if (currentValue >= maxValue) {
-  //     successHandler();
-  //   } else {
-  //     rafID = window.requestAnimationFrame(animateHandler);
-  //   }
-  // }
-
-  // function animateHandler() {
-  //   setSliderState(prevState => {
-  //     return currentValue;
-  //   });
-
-  //   if (currentValue > -1) {
-  //     window.requestAnimationFrame(animateHandler);
-  //   }
-
-  //   currentValue = currentValue - speed;
-  // }
-
-  // function successHandler() {
-  //   paidHandler();
-  //   setSliderState(0);
-  // }
 
   const classes = useStyles();
   const mouse10 = event => {
@@ -919,13 +858,15 @@ const Landingpage = props => {
                 }}>
                 <b>Earning 0.7% APR</b>
               </Typography>
-              <CountUp
-                className={classes.CountUp + ' Countup'}
-                start={500.01}
-                decimals={6}
-                end={500.999999}
-                duration={1000000}
-              />
+              <div id="Countup" className="Countup">
+                <CountUp
+                  className={classes.CountUp}
+                  start={500.01}
+                  decimals={6}
+                  end={500.999999}
+                  duration={1000000}
+                />
+              </div>
             </Grid>
             <Grid
               id="CountMobile"

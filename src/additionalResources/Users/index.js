@@ -12,7 +12,7 @@ import Start from './Start/Start';
 import Footer from './Footer/Footer';
 import LiveSupport from './UI/LiveSupport/LiveSupport';
 
-class HowDharmaWorksContainer extends Component {
+class UsersContainer extends Component {
   render() {
     return (
       <div className="TextCenter HowDharmaWorksContainer">
@@ -31,4 +31,4 @@ class HowDharmaWorksContainer extends Component {
   }
 }
 
-export default HowDharmaWorksContainer;
+export default UsersContainer;

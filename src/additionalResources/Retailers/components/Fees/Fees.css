@@ -4,11 +4,10 @@
 }
 
 .SmartWallet .Fees {
-  margin: 12.5rem 0;
+  margin: 20rem 0 12.5rem;
   position: relative;
 }
-
-.SmartWallet .Fees .Backdrop {
+.SmartWallet .Fees .BackdropZero {
   font-family: 'GraphikBlack';
   position: absolute;
   top: 50%;
@@ -17,6 +16,12 @@
   font-size: 31.5vw;
   /* font-weight: 900; */
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .SmartWallet .Fees .BackdropZero {
+    margin-top: 5vh;
+  }
 }
 
 .SmartWallet .Fees h2 {
