@@ -17,13 +17,10 @@ const Fees = () => {
     // $.fn.isInViewport = function() {
     //   let elementTop = $(this).offset().top;
     //   let elementBottom = elementTop + $(this).outerHeight();
-
     //   let viewportTop = $(window).scrollTop();
     //   let viewportBottom = viewportTop + $(window).height();
-
     //   return elementBottom > viewportTop && elementTop < viewportBottom;
     // };
-
     // $(window).on('resize scroll', function() {
     //   if ($('.BackdropZero')) {
     //     if ($('.BackdropZero').isInViewport()) {
@@ -34,23 +31,6 @@ const Fees = () => {
     //     }
     //   }
     // });
-
-    $(window).on('resize scroll', function() {
-      let elementTop = $('.BackdropZero').offset().top;
-      let elementBottom = elementTop + $('.BackdropZero').outerHeight();
-
-      let viewportTop = $(window).scrollTop();
-      let viewportBottom = viewportTop + $(window).height();
-
-      let isInViewport =
-        elementBottom > viewportTop && elementTop < viewportBottom;
-
-      if (isInViewport) {
-        $('.BackdropZero').css({
-          top: $(window).scrollTop() / 10 - 260 + 'px'
-        });
-      }
-    });
   }, []);
 
   return (

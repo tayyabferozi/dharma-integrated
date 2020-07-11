@@ -28,61 +28,58 @@ const SideDrawer = () => {
         </div>
         <div className="NavItemContainer">
           <div className="NavItem">
-            <span>Payments Network</span>
-            <span className="DropdownIndicator"></span>
+            {/* <span>Payments Network</span>
+            <span className="DropdownIndicator"></span> */}
+            <Link to="/support">
+              <div className="">Support</div>
+            </Link>
           </div>
-          <Link to="/support">
-            <div className="DropDownContent">Support</div>
-          </Link>
         </div>
         <div className="NavItemContainer">
           <div className="NavItem">
-            <span>Customers</span> <span className="DropdownIndicator"></span>
+            {/* <span>Customers</span> <span className="DropdownIndicator"></span> */}
+            <Link to="/login">
+              <div className="">Log In</div>
+            </Link>
           </div>
-          <Link to="/login">
-            <div className="DropDownContent">Log In</div>
-          </Link>
         </div>
         <div className="NavItemContainer">
           <div className="NavItem">
-            <span>Resources</span> <span className="DropdownIndicator"></span>
+            {/* <span>Customers</span> <span className="DropdownIndicator"></span> */}
+            <Link to="/users">
+              <div className="">Users</div>
+            </Link>
           </div>
-          <Link to="/retailers">
-            <div className="DropDownContent">Retailers</div>
-          </Link>
         </div>
         <div className="NavItemContainer">
+          <div className="NavItem">
+            <span>Retailers</span> <span className="DropdownIndicator"></span>
+          </div>
+          <div>
+            <div className="DropDownContent">
+              <Link style={{ margin: '0.5rem 0' }} to="/retailers">
+                Retailers
+              </Link>
+              <div style={{ margin: '0.5rem 0' }} className="">
+                Onboarding
+              </div>
+              <div style={{ margin: '0.5rem 0' }} className="">
+                Products
+              </div>
+              <div style={{ margin: '0.5rem 0' }} className="">
+                Integration
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="NavItemContainer">
           <div className="NavItem">
             <span>About Us</span> <span className="DropdownIndicator"></span>
           </div>
           <Link to="/users">
             <div className="DropDownContent">Users</div>
           </Link>
-        </div>
-        <div className="NavItemContainer">
-          <div className="NavItem">
-            <span>Products</span> <span className="DropdownIndicator"></span>
-          </div>
-          {/* <Link to="/users"> */}
-          <div className="DropDownContent">lorem</div>
-          {/* </Link> */}
-        </div>
-        <div className="NavItemContainer">
-          <div className="NavItem">
-            <span>Integration</span> <span className="DropdownIndicator"></span>
-          </div>
-          {/* <Link to="/lorem"> */}
-          <div className="DropDownContent">lorem</div>
-          {/* </Link> */}
-        </div>
-        <div className="NavItemContainer">
-          <div className="NavItem">
-            <span>On Boarding</span> <span className="DropdownIndicator"></span>
-          </div>
-          {/* <Link to="/lorem"> */}
-          <div className="DropDownContent">lorem</div>
-          {/* </Link> */}
-        </div>
+        </div> */}
         <Link to="/contact">
           <button className="ContactUs">Contact Us</button>
         </Link>

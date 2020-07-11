@@ -17,10 +17,24 @@
   background-color: #fff;
   z-index: 501;
   margin-bottom: 1.5rem;
+  padding-top: 0 !important;
 }
 
 .SideDrawer * {
   color: rgba(0, 0, 0, 0.65) !important;
+  font-weight: 400 !important;
+}
+
+.SmartWallet .SideDrawer {
+  background-color: #000;
+}
+
+.SmartWallet .SideDrawer .DropdownIndicator {
+  border-color: #fff;
+}
+
+.SmartWallet .SideDrawer * {
+  color: #fff !important;
 }
 
 .SideDrawer > .Title,
@@ -36,6 +50,7 @@
   border-radius: 3px;
   border: 1px solid #ccc;
   background-color: transparent;
+  margin-right: 0 !important;
 }
 
 .SideDrawer > .SearchContainer input[type='search'] {
@@ -43,7 +58,8 @@
   border: none;
   outline: none;
   font-size: 1.25rem;
-  width: 12rem;
+  width: 15rem;
+  min-width: 9rem;
   display: block;
   background-color: rgb(231, 235, 235);
 }
@@ -67,6 +83,7 @@
   /* color: #535a72 ; */
   color: #fff !important;
   font-weight: 500;
+  border: none;
 }
 
 .SideDrawer .NavItem {

@@ -1,7 +1,7 @@
 .Faq_wrapper {
   -webkit-box-align: center;
   align-items: center;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -37,6 +37,9 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-position: center top;
+  text-align: center;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 @media only screen and (max-width: 500px) {
